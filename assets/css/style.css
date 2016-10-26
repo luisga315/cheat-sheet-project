@@ -1,12 +1,50 @@
 section {
        background-color: green;
      }
-     #text-section {
+#text-section {
        background-color: blue;
-     }
-     .red-text {
+  }
+  .red-text {
        color: red;
-     }
-     h2.red-text {
+  }
+  h2.red-text {
        font-size: 100px;
      }
+
+  header > h3 {
+    display: inline-block;
+    margin: 0;
+  }
+
+
+
+header > nav {
+  float: right;
+}
+
+
+header > nav > ul li {
+    float: left;
+    margin: 0 10px;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: aquamarine;
+    padding: 10px 15px;
+}
+
+header > nav > ul li > a {
+    text-decoration: none;
+    color: #333;
+    font-family: helvetica, arial;
+
+    header > nav > ul {
+    padding: 0;
+    margin: 0;
+
+    

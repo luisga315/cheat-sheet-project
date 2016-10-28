@@ -1,9 +1,5 @@
-section {
-       background-color: green;
-     }
-#text-section {
-       background-color: blue;
-  }
+
+
   .red-text {
        color: red;
   }
@@ -11,19 +7,28 @@ section {
        font-size: 100px;
      }
 
-  header > h3 {
+  header > h3,
+  footer > h5 {
     display: inline-block;
     margin: 0;
   }
 
-
-
-header > nav {
-  float: right;
+  header {
+    position: fixed;
+    width: 100%;
 }
 
 
-header > nav > ul li {
+
+header > nav,
+footer > nav {
+  float: right;
+  margin-right: 15px;
+}
+
+
+header > nav > ul li,
+footer > nav > ul li {
     float: left;
     margin: 0 10px;
     list-style: none;
@@ -33,18 +38,72 @@ body {
     margin: 0;
 }
 
-header {
+header,
+footer {
     background-color: aquamarine;
     padding: 10px 15px;
 }
 
-header > nav > ul li > a {
+header > nav > ul li > a,
+footer > nav > ul li > a {
     text-decoration: none;
     color: #333;
-    font-family: helvetica, arial;
+    font-family: helvetica, arial;}
 
-    header > nav > ul {
+header > nav > ul,
+footer > nav > ul {
     padding: 0;
-    margin: 0;
+    margin: 0;}
 
-    
+main {
+  margin-left: 20%;
+  margin-top: 42px;
+  float: left;
+  width: calc(80% - 60px);
+  padding: 0 30px;
+background-color: #f4f4f4;
+
+}
+
+main > section {
+    margin-bottom: 60px;
+}
+
+aside {
+    float: left;
+    width: 20%;
+    position: fixed;
+    margin-top: 42px;
+}
+
+aside > ol {
+    padding: 0;
+}
+
+
+
+aside > ol li > a {
+    text-decoration: none;
+    color: #333;
+    font-family: helvetica, sans-serif;
+    width: 80%;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: .4s;
+  }
+
+aside > ol li > a:hover {
+    background-color: aquamarine;
+    }
+
+aside > ol li {
+        list-style: none;
+        margin-bottom: 20px;}
+
+footer {
+    clear: both;
+    background-color: #FFB6C1;}
